@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: geospatial_measurement_api
+    ports:
+      - "8000:8000"
+    environment:
+      - GEOSPATIAL_APP_NAME=Geospatial File Measurement API
+      - GEOSPATIAL_API_PREFIX=/api
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped

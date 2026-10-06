@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bengaluru Solar Farm Survey</name>
+    <description>Drone photogrammetry boundary and utility survey</description>
+    
+    <Placemark>
+      <name>Solar Array Plot A</name>
+      <description>Perimeter boundary of primary solar panel deployment</description>
+      <ExtendedData>
+        <Data name="zone_type"><value>Industrial</value></Data>
+        <Data name="capacity_mw"><value>25.5</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5850,12.9650,0
+              77.5890,12.9650,0
+              77.5890,12.9690,0
+              77.5850,12.9690,0
+              77.5850,12.9650,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>HV Transmission Corridor</name>
+      <description>Power transmission line connecting substation to grid</description>
+      <ExtendedData>
+        <Data name="voltage_kv"><value>66</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.5850,12.9650,0
+          77.5900,12.9700,0
+          77.5950,12.9750,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>GCP Base Station 01</name>
+      <description>High precision RTK GPS reference station</description>
+      <Point>
+        <coordinates>77.5870,12.9670,920</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>
